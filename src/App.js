@@ -18,7 +18,9 @@ async function sendToAPI(dataToSend) {
   };
 
   try {
-    const response = await axios.post("http://localhost:5000/api/chatgpt", arg);
+    // const response = await axios.post("http://localhost:5000/api/chatgpt", arg);
+    const response = await axios.post("https://server-tf0i.onrender.com/api/chatgpt", arg);
+
 
     const result = await response.data;
     console.log("success");
